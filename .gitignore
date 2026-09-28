@@ -1,0 +1,15 @@
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+.DS_Store
+
+chapters/*/node_modules
+
+.claude/worktrees/
+.claude/settings.local.json
+
+# Secrets. .env.example is the only env file that belongs in git.
+.env
+.env.*
+!.env.example
