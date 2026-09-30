@@ -1,8 +1,8 @@
 # orders-api — agent instructions
 
 A tiny Express + TypeScript API with an in-memory store, carrying the controls
-from the previous workshop. The feature to build is `POST /orders`; its spec
-arrives via `/plan orders <path>` and lands in `docs/specs/orders.md`.
+from the previous workshop. The feature to build is `POST /orders`; the spec is
+`docs/specs/orders.md`, committed to this repo by a human.
 
 ## Commands
 
@@ -21,8 +21,8 @@ this. Tests hit the app factory directly (`createApp()`), no server needed.
 - `src/app.ts` — factory. `src/store.ts` — in-memory data with `reset()`.
 - `src/routes/` — one router per resource. `src/schemas.ts` — zod schemas.
 - `tests/` — vitest + supertest, one file per resource.
-- `docs/specs/` — the contract, copied in by `/plan` from the product's spec.
-  **Read-only for agents after that.**
+- `docs/specs/` — the contract, committed to this repo by a human.
+  **Read-only for agents:** an edit is blocked, and the hook says why.
 - `docs/plans/` — the plan behind every change (`/plan`). See "Plans" below.
 
 ## WON'T — hard prohibitions
